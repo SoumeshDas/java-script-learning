@@ -1,0 +1,8 @@
+<NotepadPlus>
+    <Project name="basicsofjavascript">
+        <Folder name="javascipt_primary">
+            <File name="hypertextconsole.html" />
+            <File name="basics.js" />
+        </Folder>
+    </Project>
+</NotepadPlus>

@@ -55,4 +55,4 @@ function testToPrimitive()
 //excute function
 //printObject(increamentOfNumber());
 
-testToPrimitive();
+//testToPrimitive();

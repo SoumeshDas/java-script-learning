@@ -6,7 +6,8 @@ let createObject= () =>
 
 let printObject = (obj) =>
 {
-    alert(obj.obj);
+    //alert(obj.obj);
+    alert(obj);
 }
 
 let convertToDesiredType = (obj) =>
@@ -24,7 +25,34 @@ let modifyObject = () =>
     return num;
 }
 
+let increamentOfNumber = () =>
+{
+    let car1=createObject();
+    let car2=createObject();
+    car1=1234;
+    car2=3241;
+    let total=car1+car2;
+    return total;
+}
 
+function testToPrimitive()
+{
+    let user = {
+        name:"Jhon",
+        money:1000,
+        [Symbol.toPrimitive](hint)
+        {
+            alert(`hint is ${hint}`);
+            return hint=="string"? `name : ${this.name}` : 'money :'+ this.money;
+        }
+    };
+
+    alert(user);
+    alert(+user);
+    alert(user++);
+}
 
 //excute function
-printObject(modifyObject());
+//printObject(increamentOfNumber());
+
+testToPrimitive();
